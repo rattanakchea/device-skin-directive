@@ -5,7 +5,7 @@
         .directive('deviceSkin', ['$window', function($window) {
             return {
                 restrict: 'E',
-                templateUrl: 'device-skin.html',
+                templateUrl: 'bower_components/deviceskin/device-skin.html',
                 scope: {
                     bgImage: "=",
                     width: "="
