@@ -8,10 +8,15 @@
                 templateUrl: 'bower_components/deviceskin/device-skin.html',
                 scope: {
                     bgImage: "=",
-                    width: "="
                 },
                 link: function(scope, element, attrs) {
-
+                    scope.getDeviceBG = function(){
+                        console.log(attrs);
+                        console.log(scope);
+                        if (attrs.deviceType) {
+                             return 'bower_components/deviceskin/img/' + attrs.deviceType + '-skin.png';
+                         }
+                    };
                 }
             };
 
